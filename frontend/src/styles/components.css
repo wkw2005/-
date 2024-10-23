@@ -1,0 +1,118 @@
+/* 组件样式 */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff;
+  /* 设置整个背景为青色 */
+}
+
+.header {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 0;
+  /* 清除左右的内边距 */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 80px;
+  margin-left: 55px;
+
+  margin-right: 80px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+.user-info button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.sidebar {
+
+  background-color: #0ce2bf;
+  /* 青色背景 */
+  color: rgb(255, 255, 255);
+  min-width: 200px;
+  height: calc(100vh - 60px);
+  /* 减去header的高度 */
+  margin-top: 60px;
+  /* 与header对齐 */
+  position: fixed;
+  /* 固定在侧边 */
+  overflow-y: auto;
+  /* 如果内容过多，可以滚动 */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: #237907;
+  /* 悬停链接的背景颜色 */
+}
+
+
+.nav-link.active {
+  background-color: #33b308;
+  /* 激活链接的背景颜色 */
+}
+
+.main-content {
+  flex: 1;
+  margin-top: 60px;
+  /* 与header对齐 */
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 200px;
+  /* 为主内容区域添加左边距，等于侧边栏的宽度 */
+  background-color: #ffffff;
+  /* 确保与整个页面背景颜色一致 */
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}

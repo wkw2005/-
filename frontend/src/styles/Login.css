@@ -1,0 +1,37 @@
+/* 登录页面的容器样式 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使容器高度占满整个视口高度 */
+    text-align: center; /* 使文本居中 */
+}
+
+/* 登录表单的样式 */
+.login-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加一些阴影以提升视觉效果 */
+}
+
+/* 输入框和按钮的样式 */
+.login-form input,
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}

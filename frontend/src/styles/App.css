@@ -1,0 +1,137 @@
+/* 全局样式 */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.admin-layout .layout-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 60px); /* 减去header的高度 */
+}
+
+/* 顶部标题栏样式 */
+.header {
+  background-color: #282c34; /* 深色背景 */
+  color: white;
+  padding: 10px 0; /* 清除左右的内边距 */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* 左侧导航菜单样式 */
+.sidebar {
+  background-color: #0480e6; 
+  padding: 0; /* 清除左右的内边距 */
+  min-width: 200px;
+  margin-top: 100px; /* 与顶部标题栏对齐 */
+  height: calc(100vh - 60px); /* 减去header的高度 */
+  overflow-y: auto;
+}
+
+/* 通知与公告区域样式 */
+.notifications {
+  margin: 0;
+  background-color: #b3ff00;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+  padding: 0px;
+  width: 200px; /* 设置通知面板的宽度 */
+  height: calc(100vh - 60px); /* 减去header的高度 */
+  margin-top: 100px;
+  margin-right: 0;
+  position: fixed; /* 固定在右侧 */
+  right: 0px; /* 距离右边距 */
+}
+
+/* 底部通知与公告区域样式 */
+.footer {
+  background-color: #282c34; /* 深色背景 */
+  color: white;
+  padding: 10px 0; /* 清除左右的内边距 */
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: #555;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: red;
+}
+
+/* NotificationManagement组件的样式 */
+.notification-management {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  height: 100%; /* 设置通知面板的高度 */
+  overflow-y: auto;
+}
+/* OvertimeApplication.css */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 300px; /* 可以根据实际情况调整这个宽度 */
+  text-align: right;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(250px); /* 输入框的宽度减去标签宽度和边距 */
+}
+
+.butto {
+  margin-top: 10px;
+  margin-left:  390px;
+}
+.text1 {
+  margin-left:  375px;
+
+}
+.text2{
+  margin-left:  370px;
+
+}
+.text3{
+  margin-left:  310px;
+}
+.text4{
+  margin-left:  322px;
+}
+.xinxi{
+  margin-left:  240px;
+}
